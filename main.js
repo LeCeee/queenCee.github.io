@@ -1,4 +1,5 @@
 var hid = document.getElementById('div1');
+
 // var bub = document.getElementsByClassName('bubbles');
 
 hid.style.visibility = 'hidden'; 

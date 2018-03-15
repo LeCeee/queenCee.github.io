@@ -30,6 +30,11 @@ html, body {
   letter-spacing: 5px;
   text-align: center;
 }
+.smol{
+
+  font-size: 10px;
+
+}
 #div1{
   position: relative;
   left: 50%;
@@ -62,11 +67,13 @@ html, body {
 	background-color: #ffeb3b;
 	box-shadow: 0 0 10px 5px #faf099cc;
 	border-radius: 50%;
-	margin: 0;
+  margin: 0;
+	
 	padding: 0;
 	display: flex;
 	position: relative;
 	border-width: 20px;
+
 }
 
 
