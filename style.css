@@ -1,0 +1,205 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  position: relative;
+  background: #222;
+  font-family: "Open Sans";
+  /*display: flex;*/
+}
+
+#wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#wrap p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: rgba(255,255,255,.5);
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+}
+#div1{
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: rgba(255,255,255,.5);
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.ball {
+  pointer-events: none;
+  position: absolute; 
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; 
+  background: gray;
+  animation: implode 1s ease-in-out;
+  animation-fill-mode: both;
+  opacity: .5;
+}
+
+@keyframes implode {
+  100% {transform: scale(0)}
+}
+#light{
+	width: 30px;
+	height: 30px;
+	background-color: #ffeb3b;
+	box-shadow: 0 0 10px 5px #faf099cc;
+	border-radius: 50%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	position: relative;
+	border-width: 20px;
+}
+
+
+
+.preloader {
+  width: 100%;
+  height: 100%;
+  /*background: #000;*/
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-name: fadeOut;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.content {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#1A3742, #9EA183);
+}
+.bubbles {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.bubble {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: #fff;
+  background: rgba(255, 255, 255, 0.25);
+  will-change: transform;
+  transition: 2s;
+}
+.bubbleHover {
+  transform: scale(2);
+  background: red;
+}
+.minDistance {
+  background: darkorange;
+}
+.maxDistance {
+  background: yellow;
+}
+.bubble-container {
+  position: absolute;
+  bottom: 0;
+  animation: bubbleRise 10s infinite ease-in;
+  will-change: transform;
+}
+@keyframes bubbleRise {
+  0% {
+    opacity: 0;
+    bottom: 0;
+  }
+  15% {
+    bottom: 0;
+    opacity: 0.1;
+    margin-left: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+    margin-left: 50px;
+  }
+  100% {
+    bottom: 100%;
+    opacity: 0;
+  }
+}
+/*.spinner-2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  margin: 50px auto;
+  display: inline-block;
+  border: 3px solid transparent;
+  border-top-color: orange;
+  animation: spinall 2s linear infinite;
+}
+.spinner-2:after,
+.spinner-2:before {
+  content: '';
+  display: block;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+}
+.spinner4:after {
+  position: absolute;
+  top: 3%;
+  left: 3.5%;
+  border: 3px solid transparent;
+  border-top-color: orange;
+  animation: spinall 3s linear infinite;
+}
+.spinner4:before {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  border: 3px solid transparent;
+  border-top-color: orange;
+  animation: spinall 2s linear infinite;
+}
+@keyframes spinall {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}*/
+
+
+
+
