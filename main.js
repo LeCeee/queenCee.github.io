@@ -5,7 +5,7 @@ var hid = document.getElementById('div1');
 hid.style.visibility = 'hidden'; 
 // bub.style.visibility = 'hidden'; 
 
-var audio = new Audio('fix-you1.mp3');
+var audio = new Audio('/home/cee/fix-you/fix-you1.mp3');
 audio.play();
 
 $(document).ready(function(){
